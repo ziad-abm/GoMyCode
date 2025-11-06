@@ -320,6 +320,92 @@ span {
   opacity: 1; 
 }
 
+/* Certifications */
+.certifications {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.certifications h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.certifications h2 span {
+  color: var(--accent);
+}
+
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cert-card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  text-align: center;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+  border-color: var(--accent);
+}
+
+.cert-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.cert-org {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.cert-date {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  margin-top: 10px;
+}
+
+.cert-link:hover {
+  color: #fff;
+}
+
+.cert-link i {
+  font-size: 0.8rem;
+}
+
 /* Contact */
 .contact {
   padding: 80px 10%;
@@ -441,8 +527,30 @@ footer {
     padding: 60px 5%;
   }
   
-  .projects, .contact {
+  .projects, .certifications, .contact {
     padding: 60px 5%;
+  }
+
+  .certifications-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certifications h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .cert-card {
+    padding: 25px 20px;
+  }
+
+  .services h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -462,5 +570,33 @@ footer {
   
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .certifications h2 {
+    font-size: 1.5rem;
+  }
+
+  .cert-card {
+    padding: 20px;
+  }
+
+  .cert-icon {
+    font-size: 2.5rem;
+  }
+
+  .cert-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .cert-link {
+    font-size: 0.85rem;
+  }
+
+  .services h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
   }
 }
